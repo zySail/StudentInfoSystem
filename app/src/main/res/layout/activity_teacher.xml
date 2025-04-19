@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/student_logo" />
+    <!-- 查看个人信息按钮 -->
+    <Button
+        android:id="@+id/showTeacherInfoButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查看个人信息" />
+
+    <!-- 学生信息管理按钮 -->
+    <Button
+        android:id="@+id/studentInfoButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="学生信息管理" />
+
+    <!-- 课程管理按钮 -->
+    <Button
+        android:id="@+id/courseManagementButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="课程管理" />
+
+    <!-- 成绩管理按钮 -->
+    <Button
+        android:id="@+id/btnGradeInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="成绩管理" />
+
+
+</LinearLayout>

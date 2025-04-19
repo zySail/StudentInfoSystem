@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    package="com.example.studentinfosystem">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+
+    <application
+
+        android:allowBackup="true"
+
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/student_logo"
+        android:label="学生管理系统"
+        android:roundIcon="@drawable/student_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StudentInfoSystem"
+        android:requestLegacyExternalStorage="true"
+        tools:targetApi="31">
+
+        <!-- 主界面：登录 -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 管理员界面 -->
+        <activity android:name=".AdminActivity"/>
+
+
+        <!-- 教师界面 -->
+        <activity android:name=".TeacherActivity" />
+        <activity android:name=".TeacherInfoActivity"/>
+        <activity android:name=".StudentManagementActivity" />
+        <activity android:name=".CourseManagementActivity" />
+        <activity android:name=".GradeInputActivity"/>
+
+        <!-- 学生界面 -->
+        <activity android:name=".StudentActivity" />
+        <activity android:name=".StudentInfoActivity" />
+        <activity android:name=".CourseSelectionActivity" />
+        <activity android:name=".GradeViewActivity"/>
+
+
+    </application>
+
+</manifest>
